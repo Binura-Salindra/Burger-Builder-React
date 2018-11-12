@@ -1,6 +1,6 @@
-.Toolbar{
+.Toolbar {
     height: 56px;
-    width: 99%;
+    width: 100%;
     position: fixed;
     top: 0;
     left: 0;
@@ -8,7 +8,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 5px 0 10px;
+    padding: 0 20px;
+    box-sizing: border-box;
     z-index: 90;
 }
 
@@ -16,12 +17,12 @@
     height: 100%;
 }
 
-.Logo{
+.Logo {
     height: 80%;
 }
 
 @media (max-width: 499px) {
-    .DesktopOnly{
+    .DesktopOnly {
         display: none;
     }
 }

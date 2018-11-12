@@ -5,23 +5,22 @@ import classes from './SideDrawer.css';
 import Auxiliary from "../../../hoc/Auxiliary/Auxiliary";
 import Backdrop from "../../UI/Backdrop/Backdrop";
 
-const sideDrawer = (props) => {
-    let attachedClasses = [classes.SideDrawer,classes.Close];
-    if(props.open){
-        attachedClasses = [classes.SideDrawer,classes.Open];
+const sideDrawer = ( props ) => {
+    let attachedClasses = [classes.SideDrawer, classes.Close];
+    if (props.open) {
+        attachedClasses = [classes.SideDrawer, classes.Open];
     }
     return (
         <Auxiliary>
-            <Backdrop show={props.open} clicked={props.closed}>
-                <div className={attachedClasses.join(' ')}>
-                    <div className={classes.Logo}>
-                        <Logo/>
-                    </div>
-                    <nav>
-                        <NavigationItems/>
-                    </nav>
+            <Backdrop show={props.open} clicked={props.closed}/>
+            <div className={attachedClasses.join(' ')}>
+                <div className={classes.Logo}>
+                    <Logo />
                 </div>
-            </Backdrop>
+                <nav>
+                    <NavigationItems />
+                </nav>
+            </div>
         </Auxiliary>
     );
 };

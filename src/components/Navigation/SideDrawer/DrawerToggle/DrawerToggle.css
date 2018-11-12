@@ -21,9 +21,3 @@
         display: none;
     }
 }
-
-.DrawerToggleDiv {
-    width: 90%;
-    height: 3px;
-    background-color: white;
-}
